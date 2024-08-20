@@ -1,4 +1,5 @@
 Video: https://drive.google.com/file/d/1yMkVItOIxVpfvsxdYCPAUWPiphjW9dJ5/view?usp=sharing
+
 Documentation:
 	For this classes final, I worked on creating a path-finding program. One of the things I have seen a lot but never had the chance to really work out was how path-finding works. I knew it generally took the start and end point, and calculated a path between them based on generic rules. What I didn’t know, was how those rules worked.
 	So in this final, I created a path-finding algorithm using one of the best algorithms I knew about, A*. After researching it, I know now that it uses 2 sets of data: The actual distance between two points, and the heuristic distance between the start and end point. The actual distance between two points is 1. This is simple. But the distance between two diagonal points is actually 1.4, or really 1.414, due to the square root thanks to the hypotenuse. The heuristic distance, is simply the distance between the start and end point. Using these two variables, you can calculate the value of moving to one point vs another. However, there is also a third factor, the accrued value.
